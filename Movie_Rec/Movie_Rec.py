@@ -5,7 +5,7 @@ import pandas as pd
 
 # Function to fetch movie poster using TMDb API
 def fetch_poster(movie_id):
-    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US'
+    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=APIKEY&language=en-US'
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
